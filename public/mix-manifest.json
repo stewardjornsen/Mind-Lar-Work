@@ -1,5 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/js/bs-custom-file-input.min.js": "/js/bs-custom-file-input.min.js"
+    "/js/bs-custom-file-input.min.js": "/js/bs-custom-file-input.min.js",
+    "/js/custom.js": "/js/custom.js",
+    "/js/jquery.min.js": "/js/jquery.min.js"
 }

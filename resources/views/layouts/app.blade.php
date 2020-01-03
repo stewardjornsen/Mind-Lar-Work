@@ -8,18 +8,18 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Mind Workshop') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/bs-custom-file-input.min.js') }}" defer></script>
+
 
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+
     <!-- Styles -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
@@ -83,6 +83,13 @@
             @yield('content')
         </main>
     </div>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> --}}
+
+
+
+
+    {{-- <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script> --}}
+
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
         <script>
@@ -93,6 +100,27 @@
     bsCustomFileInput.init()
     })
     </script> --}}
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" ></script>
+    <script src="{{ asset('js/bs-custom-file-input.min.js') }}"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js">
+    </script>
+    <script src="{{ asset('js/custom.js') }}"></script>
+
+    <script src="{{ asset('/js/ckeditor/build/ckeditor.js') }}"></script>
+    <script>
+        // ClassicEditor
+        //     .create( document.querySelector( '.editor' ) )
+        //     .then( editor => {
+        //             console.log( editor );
+        //     } )
+        //     .catch( error => {
+        //             console.error( error );
+        //     } );
+
+
+    </script>
 </body>
 
 </html>

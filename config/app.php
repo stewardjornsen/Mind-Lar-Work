@@ -161,13 +161,15 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        
+
 
         /*
-         * Package Service Providers...
-         */
+        * Package Service Providers...
+        */
 
         'Kris\LaravelFormBuilder\FormBuilderServiceProvider',
+        Intervention\Image\ImageServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -229,6 +231,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'FormBuilder' => 'Kris\LaravelFormBuilder\Facades\FormBuilder',
+        'Image' => Intervention\Image\Facades\Image::class,
+
 
     ],
 

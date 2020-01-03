@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+<a href="{{ route('post.create') }}" class="btn btn-primary">Add Post</a>
                     You are logged in!
                 </div>
             </div>

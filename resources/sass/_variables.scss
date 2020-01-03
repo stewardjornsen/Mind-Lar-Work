@@ -1,8 +1,6 @@
-// Body
-$body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: "Nunito", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
@@ -17,3 +15,25 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+//STX colors
+$stxblue: #314357;
+$stxorange: #e1b573;
+$stxgreen: #11bd9e;
+
+$primary: #11bd9e !default;
+$secondary: #314357 !default;
+$border-width: 2px !default;
+
+// Body
+$body-bg: #dbe1e8;
+$body-color: $secondary;
+
+$enable-gradients: true;
+$enable-shadows:  true;
+
+$theme-colors: (
+    "tertiary": #e1b573,
+    "quaternary": #283748
+);
+

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Http\Request;
 
 /*
@@ -18,3 +19,20 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::get('post/json', 'PostController@json');
 Route::resource('post', 'PostController');
+Route::resource('person', 'PersonController');
+Route::post('landing1', 'HomeController@landing');
+Route::get('landing1', 'HomeController@landing');
+
+Route::group([
+
+    'middleware' => 'api',
+    'prefix' => 'auth'
+
+], function () {
+
+    Route::post('landing2', 'HomeController@landing');
+    Route::post('login', 'AuthController@login');
+    Route::post('logout', 'AuthController@logout');
+    Route::post('refresh', 'AuthController@refresh');
+    Route::post('me', 'AuthController@me');
+});
