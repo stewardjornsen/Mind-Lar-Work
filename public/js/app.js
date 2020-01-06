@@ -2125,28 +2125,41 @@ var loader = "giphy.gif";
     main_banner: function main_banner() {
       return this.allevents.banner.value;
     },
-    featured_image: function featured_image() {
-      if (this.nearestEvents.post) {
-        return this.app_url + "images/posts/" + this.nearestEvents.post.featured_image;
-      }
-    },
-    featured_image_thumb: function featured_image_thumb() {
-      if (this.nearestEvents.post) {
-        return this.app_url + "thumbnails/posts/" + this.nearestEvents.post.featured_image;
-      }
-    },
-    banner_image: function banner_image() {
-      console.log(this.nearestEvents);
-
-      if (this.nearestEvents != undefined) {
-        return this.app_url + "images/posts/" + this.nearestEvents.post.banner_image;
-      }
-    },
-    banner_image_thumb: function banner_image_thumb() {
-      if (this.nearestEvents.post) {
-        return this.app_url + "thumbnails/posts/" + this.nearestEvents.post.banner_image;
-      }
-    },
+    // featured_image() {
+    //   if (this.nearestEvents.post) {
+    //     return (
+    //       this.app_url +
+    //       "images/posts/" +
+    //       this.nearestEvents.post.featured_image
+    //     );
+    //   }
+    // },
+    // featured_image_thumb() {
+    //   if (this.nearestEvents.post) {
+    //     return (
+    //       this.app_url +
+    //       "thumbnails/posts/" +
+    //       this.nearestEvents.post.featured_image
+    //     );
+    //   }
+    // },
+    // banner_image() {
+    //   console.log(this.nearestEvents);
+    //   if (this.nearestEvents != undefined) {
+    //     return (
+    //       this.app_url + "images/posts/" + this.nearestEvents.post.banner_image
+    //     );
+    //   }
+    // },
+    // banner_image_thumb() {
+    //   if (this.nearestEvents.post) {
+    //     return (
+    //       this.app_url +
+    //       "thumbnails/posts/" +
+    //       this.nearestEvents.post.banner_image
+    //     );
+    //   }
+    // },
     pastEvents: function pastEvents() {
       return _.filter(this.allevents, function (item) {
         return moment__WEBPACK_IMPORTED_MODULE_0___default()(item.end_date).isBefore(undefined);
@@ -56155,7 +56168,7 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-6" }, [
-        _c("h3", [_vm._v("N500.00")]),
+        _c("h3", [_vm._v("N500.00__")]),
         _vm._v(" "),
         _c("div", [_vm._v("Monthly")]),
         _vm._v(" "),
@@ -68369,7 +68382,8 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); //
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
