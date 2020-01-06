@@ -16,7 +16,7 @@
             </div>
           </div>
           <div class="col-6">
-            <h3>N500.00</h3>
+            <h3>N500.00__</h3>
             <div>Monthly</div>
             <button class="btn btn-secondary">Donate</button>
           </div>
