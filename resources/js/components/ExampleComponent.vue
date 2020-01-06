@@ -292,41 +292,41 @@ export default {
       return this.allevents.banner.value;
     },
 
-    featured_image() {
-      if (this.nearestEvents.post) {
-        return (
-          this.app_url +
-          "images/posts/" +
-          this.nearestEvents.post.featured_image
-        );
-      }
-    },
-    featured_image_thumb() {
-      if (this.nearestEvents.post) {
-        return (
-          this.app_url +
-          "thumbnails/posts/" +
-          this.nearestEvents.post.featured_image
-        );
-      }
-    },
-    banner_image() {
-      console.log(this.nearestEvents);
-      if (this.nearestEvents != undefined) {
-        return (
-          this.app_url + "images/posts/" + this.nearestEvents.post.banner_image
-        );
-      }
-    },
-    banner_image_thumb() {
-      if (this.nearestEvents.post) {
-        return (
-          this.app_url +
-          "thumbnails/posts/" +
-          this.nearestEvents.post.banner_image
-        );
-      }
-    },
+    // featured_image() {
+    //   if (this.nearestEvents.post) {
+    //     return (
+    //       this.app_url +
+    //       "images/posts/" +
+    //       this.nearestEvents.post.featured_image
+    //     );
+    //   }
+    // },
+    // featured_image_thumb() {
+    //   if (this.nearestEvents.post) {
+    //     return (
+    //       this.app_url +
+    //       "thumbnails/posts/" +
+    //       this.nearestEvents.post.featured_image
+    //     );
+    //   }
+    // },
+    // banner_image() {
+    //   console.log(this.nearestEvents);
+    //   if (this.nearestEvents != undefined) {
+    //     return (
+    //       this.app_url + "images/posts/" + this.nearestEvents.post.banner_image
+    //     );
+    //   }
+    // },
+    // banner_image_thumb() {
+    //   if (this.nearestEvents.post) {
+    //     return (
+    //       this.app_url +
+    //       "thumbnails/posts/" +
+    //       this.nearestEvents.post.banner_image
+    //     );
+    //   }
+    // },
     pastEvents() {
       return _.filter(this.allevents, item => {
         return moment(item.end_date).isBefore(undefined);
