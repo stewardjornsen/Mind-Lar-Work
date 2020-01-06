@@ -16,7 +16,7 @@
             </div>
           </div>
           <div class="col-6">
-            <h3>N500</h3>
+            <h3>N500.00</h3>
             <div>Monthly</div>
             <button class="btn btn-secondary">Donate</button>
           </div>
@@ -68,7 +68,7 @@
           @click="eventmoreinfo = true"
         >
           <span class="oi oi-document"></span>
-          Get Event Info
+          Get Event Info...
         </button>
         <button type="button" class="btn btn-outline-secondary stx m-1">
           <span class="oi oi-home"></span> Enter Hall
@@ -196,7 +196,7 @@ const loader = "giphy.gif";
 export default {
   data() {
     return {
-      app_url: "http://127.0.0.1:8000/",
+      app_url: "https://stewardjornsen.com/",
       banner: "",
       vod: {},
       loader: "giphy.gif",
@@ -233,7 +233,7 @@ export default {
       .then(token => {
         this.token = token.data.access_token;
         axios
-          .post("/api/auth/landing2?token=" + this.token, {
+          .post(this.app_url + "/api/auth/landing2?token=" + this.token, {
             headers: {
               "Content-Type": "application/json",
               Accept: "application/json",

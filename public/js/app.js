@@ -2036,7 +2036,7 @@ var loader = "giphy.gif";
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      app_url: "http://127.0.0.1:8000/",
+      app_url: "https://stewardjornsen.com/",
       banner: "",
       vod: {},
       loader: "giphy.gif",
@@ -2072,7 +2072,7 @@ var loader = "giphy.gif";
       }
     }).then(function (token) {
       _this.token = token.data.access_token;
-      axios.post("/api/auth/landing2?token=" + _this.token, {
+      axios.post(_this.app_url + "/api/auth/landing2?token=" + _this.token, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
@@ -55880,7 +55880,7 @@ var render = function() {
                       },
                       [
                         _c("span", { staticClass: "oi oi-document" }),
-                        _vm._v("\n        Get Event Info\n      ")
+                        _vm._v("\n        Get Event Info...\n      ")
                       ]
                     ),
                     _vm._v(" "),
@@ -56155,7 +56155,7 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-6" }, [
-        _c("h3", [_vm._v("N500")]),
+        _c("h3", [_vm._v("N500.00")]),
         _vm._v(" "),
         _c("div", [_vm._v("Monthly")]),
         _vm._v(" "),
