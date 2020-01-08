@@ -38,3 +38,6 @@ Route::get('/abel', function () {
     // $p->restore();
     return $p;
 });
+Route::get('/checkconnection', function () {
+    return 1;
+});
