@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Event;
+use App\Person;
 use App\Setting;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -41,25 +42,24 @@ class HomeController extends Controller
         // $upcomingevents = Event::upcoming()->get(); //Scope from Model to pick most upcoming event
         // $pastevents = Event::past()->get(); //Scope from Model to pick most upcoming event
 
+        $output = [];
 
         $allevents = Event::with(['post'])
             ->orderBy('start_date', 'asc')
             ->orderBy('end_date', 'asc')
             ->get(); //Scope from Model to pick most upcoming event
 
+        //SET HOST URL;
+        $output['app_url'] = env('APP_URL', 'https://stewardjornsen.com/');
+
         //GET BANNER IMAGE
         $output['banner'] = Setting::find(1);
 
-
-        //SET HOST URL;
-        $output['app_url'] = env('APP_URL', 'http://localhost/');
-
+        $output['persons'] = Person::orderBy('id', 'asc')->get();
 
         $output['allevents'] = $allevents;
 
         return ($output);
-
-
     }
     public function page()
     {
