@@ -22,6 +22,7 @@ class CreatePostsTable extends Migration
             $table->string('featured_image')->nullable();
             $table->string('banner_image')->nullable();
             $table->string('author')->nullable();
+            $table->tinyInteger('type')->default(1);
             $table->boolean('is_premium')->default(0);
             $table->unsignedBigInteger('user_id')->default(1);
             $table->timestamps();
