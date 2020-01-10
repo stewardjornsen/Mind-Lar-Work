@@ -44,7 +44,7 @@
             @submit('Submit')
             @reset()
             @link(route('person.create'), 'Add New', 'secondary')
-@if(file_exists(public_path('thumbnails/'.$person->photo)))
+@if(file_exists(public_path('thumbnails/'.$person->photo)) && $person->photo != "")
             <div>
                 <img src="{{ asset('thumbnails/'.$person->photo) }}" class="mb-3 mt-3" alt="">
                 @checkbox('delete_photo', 'Delete Photo', $person->photo, null, ['switch' => true])
@@ -53,7 +53,7 @@
 @endif
             @file('photo', 'Profile Photo', ['custom'=> true])
 
-@if(file_exists(public_path('thumbnails/'.$person->cover)))
+@if(file_exists(public_path('thumbnails/'.$person->cover)) && $person->cover != "")
             <div>
                 <img src="{{ asset('thumbnails/'.$person->cover) }}" class="mb-3 mt-3" alt="">
                 @checkbox('delete_cover', 'Delete Cover', $person->cover, null, ['switch' => true])

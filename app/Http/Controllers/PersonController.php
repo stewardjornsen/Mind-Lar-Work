@@ -26,10 +26,6 @@ class PersonController extends Controller
      */
     public function create()
     {
-        App::bind('path.public', function() {
-    return base_path().'/public_html/stewardjornsen.com/';
-});
-        dd(public_path());
         $person = new Person;
         return view('contents.personform')->with(compact('person') );
     }
