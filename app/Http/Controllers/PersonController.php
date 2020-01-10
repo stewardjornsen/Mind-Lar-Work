@@ -26,6 +26,7 @@ class PersonController extends Controller
      */
     public function create()
     {
+        dd(public_path());
         $person = new Person;
         return view('contents.personform')->with(compact('person') );
     }
@@ -90,6 +91,7 @@ class PersonController extends Controller
 
     public function upload($request, $field){
 
+        // dd($request)
         if (!$request->file($field))
         return null;
 
