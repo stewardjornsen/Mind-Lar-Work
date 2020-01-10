@@ -32,6 +32,9 @@ Route::get('/adam/{event}/{song}', function ($event, $song) {
     $song = $song->events()->sync([1,2,4]);
     return $song;
 });
+Route::get('/symlink', function ($event, $song) {
+   symlink('/home2/qittomal/laravel_stewardjornsen/public', '/home2/qittomal/public_html/stewardjornsen.com');
+});
 
 Route::get('/abel', function () {
     $p = App\Song::all();
