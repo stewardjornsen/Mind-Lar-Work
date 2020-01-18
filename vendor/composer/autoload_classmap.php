@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Article' => $baseDir . '/app/Article.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Devotion' => $baseDir . '/app/Devotion.php',
     'App\\Event' => $baseDir . '/app/Event.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\File' => $baseDir . '/app/File.php',
@@ -31,6 +32,7 @@ return array(
     'App\\Http\\Controllers\\PersonController' => $baseDir . '/app/Http/Controllers/PersonController.php',
     'App\\Http\\Controllers\\PhotoController' => $baseDir . '/app/Http/Controllers/PhotoController.php',
     'App\\Http\\Controllers\\PostController' => $baseDir . '/app/Http/Controllers/PostController.php',
+    'App\\Http\\Controllers\\SettingController' => $baseDir . '/app/Http/Controllers/SettingController.php',
     'App\\Http\\Controllers\\SongController' => $baseDir . '/app/Http/Controllers/SongController.php',
     'App\\Http\\Controllers\\TypeController' => $baseDir . '/app/Http/Controllers/TypeController.php',
     'App\\Http\\Controllers\\VideoController' => $baseDir . '/app/Http/Controllers/VideoController.php',
@@ -156,6 +158,7 @@ return array(
     'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
     'DeepCopy\\TypeFilter\\TypeFilter' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
     'DeepCopy\\TypeMatcher\\TypeMatcher' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+    'DevotionSeeder' => $baseDir . '/database/seeds/DevotionSeeder.php',
     'Doctrine\\Common\\Cache\\ApcCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/ApcCache.php',
     'Doctrine\\Common\\Cache\\ApcuCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/ApcuCache.php',
     'Doctrine\\Common\\Cache\\ArrayCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/ArrayCache.php',

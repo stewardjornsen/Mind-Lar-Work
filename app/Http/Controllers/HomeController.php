@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Event;
 use App\Person;
 use App\Setting;
+use App\Devotion;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -54,10 +55,16 @@ class HomeController extends Controller
 
         //GET BANNER IMAGE
         $output['banner'] = Setting::find(1);
-
         $output['persons'] = Person::orderBy('id', 'asc')->get();
-
         $output['allevents'] = $allevents;
+
+        $from = Carbon::now()->subDays(7);
+        $to = Carbon::now()->addDays(14);
+        $output['devotions'] = Devotion::whereBetween('devotion_date', [$from->format('Y-m-d'), $to->format('Y-m-d')])->orderBy('devotion_date', 'asc')->get();
+
+
+
+
 
         return ($output);
     }

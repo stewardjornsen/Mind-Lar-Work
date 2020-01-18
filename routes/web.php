@@ -24,6 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('post', 'PostController');
 Route::resource('person', 'PersonController');
+Route::resource('devotion', 'DevotionController');
 
 Route::get('/eve', 'HomeController@page')->name('eve');
 
