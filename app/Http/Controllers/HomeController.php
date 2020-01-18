@@ -58,7 +58,7 @@ class HomeController extends Controller
         $output['persons'] = Person::orderBy('id', 'asc')->get();
         $output['allevents'] = $allevents;
 
-        $from = Carbon::now()->subDays(7);
+        $from = Carbon::now()->subDays(2);
         $to = Carbon::now()->addDays(14);
         $output['devotions'] = Devotion::whereBetween('devotion_date', [$from->format('Y-m-d'), $to->format('Y-m-d')])->orderBy('devotion_date', 'asc')->get();
 
