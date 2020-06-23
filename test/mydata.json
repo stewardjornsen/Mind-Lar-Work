@@ -1,12 +1,14 @@
 [
-   {
-      "_uid":"1",
-      "title":"Stevenson Medicare",
-      "url":"https://res.cloudinary.com/stewardgj/image/upload/v1592901622/Mind%20Workshop/Stevenson_Medicare_Brochure_-_small.pdf"
-   },
-   {
-      "_uid":"2",
-      "title":"Adano Corporate Profile",
-      "url":"https://res.cloudinary.com/stewardgj/image/upload/v1592901656/Mind%20Workshop/Adano_Corporate_Profile_INTERACTIVE_-_2020.pdf"
-   }
-]
+        {
+            "_uid": "1",
+            "title": "Stevenson Medicare",
+            "url": "https://res.cloudinary.com/stewardgj/image/upload/v1592901622/Mind%20Workshop/Stevenson_Medicare_Brochure_-_small.pdf",
+            "cover": "https://res.cloudinary.com/stewardgj/image/upload/v1592909762/Mind%20Workshop/Stevenson_Medicare_Brochure_-_small-1.png"
+        },
+        {
+            "_uid": "2",
+            "title": "Adano Corporate Profile",
+            "url": "https://res.cloudinary.com/stewardgj/image/upload/v1592901656/Mind%20Workshop/Adano_Corporate_Profile_INTERACTIVE_-_2020.pdf",
+            "cover": "https://res.cloudinary.com/stewardgj/image/upload/v1592909761/Mind%20Workshop/Adano_Corporate_Profile_INTERACTIVE_-_2020-1.png"
+        }
+    ]
